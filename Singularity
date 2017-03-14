@@ -5,7 +5,7 @@ OSVersion: xenial
 MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %runscript
-    read_fast5_basecaller.py
+    read_fast5_basecaller.py "$@"
 
 %post
     apt-get --assume-yes install wget
